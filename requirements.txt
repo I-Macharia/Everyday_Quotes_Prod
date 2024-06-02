@@ -1,3 +1,7 @@
 streamlit
 textblob
 scikit-learn
+seaborn
+matplotlib
+wordcloud
+plotly
