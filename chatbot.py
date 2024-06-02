@@ -30,7 +30,7 @@ def load_data():
 quotes_vectorized, tweets_vectorized, df, quotes_2, combined_text, tweets_df = load_data()
 
 # Load the QuoteFinder class with the saved components
-quote_finder = QuoteFinder.load('Deployment/data/vectorizer.pkl', 'Deployment/data/svm_model.pkl', 'Deployment/data/quotes_df.pkl')
+quote_finder = QuoteFinder.load('data/vectorizer.pkl', 'data/svm_model.pkl', 'data/quotes_df.pkl')
 
 
 class ChatBot:
@@ -119,7 +119,7 @@ class ChatBot:
 
 if __name__ == "__main__":
     quotes_vectorized, tweets_vectorized, df, quotes_2, combined_text, tweets_df = load_data()
-    data_handler = QuoteFinder.load('Deployment/data/vectorizer.pkl', 'Deployment/data/svm_model.pkl', 'Deployment/data/quotes_df.pkl')
+    data_handler = QuoteFinder.load('data/vectorizer.pkl', 'data/svm_model.pkl', 'data/quotes_df.pkl')
     ai = ChatBot(name="Bobby", quote_finder=data_handler)
 
     # Testing the chatbot with various inputs
