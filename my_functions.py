@@ -29,7 +29,7 @@ from nltk.tokenize import word_tokenize
 
 import streamlit as st
 import os
-import subprocesses
+import subprocess
 
 def install_spacy_model():
     subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
