@@ -1,3 +1,17 @@
+import os
+import subprocess
+
+def install_spacy_model():
+    subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
+
+# Install spaCy model if not already installed
+try:
+    import spacy
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    install_spacy_model()
+    nlp = spacy.load("en_core_web_sm")
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
