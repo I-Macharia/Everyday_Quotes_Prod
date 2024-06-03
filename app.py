@@ -14,9 +14,11 @@ from my_functions import (load_results, QuoteFinder,aggregate_statistics,
     correlation_analysis)
 from chatbot import ChatBot
 import spacy
-from spacy.cli import download
+from spacy.cli
 
-download("en_core_web_sm")
+# Download the model using spacy.cli.download
+spacy.cli.download("en_core_web_sm")
+
 nlp = spacy.load("en_core_web_sm")
 # Function to load data
 @st.cache_data
