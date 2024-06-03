@@ -6,7 +6,6 @@ def install_spacy_model():
     subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
 
 def load_spacy_model():
-    import spacy
     try:
         nlp = spacy.load("en_core_web_sm")
     except OSError:
