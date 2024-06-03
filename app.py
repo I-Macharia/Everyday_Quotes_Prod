@@ -1,30 +1,3 @@
-import os
-import subprocess
-def install_spacy_and_model():
-    try:
-        import spacy
-    except ImportError:
-        # st.write("Installing spaCy...")
-        subprocess.run(['pip', 'install', 'spacy'], check=True)
-    
-    import spacy
-    try:
-        spacy.load("en_core_web_sm")
-    except OSError:
-        # st.write("Downloading spaCy model...")
-        subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
-
-def load_spacy_model():
-    import spacy
-    nlp = spacy.load("en_core_web_sm")
-    return nlp
-
-# Ensure spaCy and the model are installed
-install_spacy_and_model()
-
-# Load the spaCy model
-nlp = load_spacy_model()
-
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -40,7 +13,11 @@ from my_functions import (load_results, QuoteFinder,aggregate_statistics,
     sentiment_categories,
     correlation_analysis)
 from chatbot import ChatBot
+import spacy
+from spacy.cli import download
 
+download("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 # Function to load data
 @st.cache_data
 def load_data():
