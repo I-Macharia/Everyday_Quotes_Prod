@@ -1,5 +1,6 @@
 import os
 import subprocess
+import spacy
 
 def install_spacy_model():
     subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
