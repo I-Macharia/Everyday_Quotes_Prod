@@ -5,8 +5,9 @@ seaborn
 matplotlib
 wordcloud
 plotly
-spacy
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#sha256=65cea113d7509d5ab515583bbcbc9a31b4157bebbb73133d4110d2945476eaa4
+spacy==2.3.5
+nltk
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 numpy
 pandas
 
