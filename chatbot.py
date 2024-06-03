@@ -9,7 +9,10 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
 from my_functions import load_results, QuoteFinder
 import spacy.cli 
+import nltk
 
+nltk.download("punkt")
+nltk.download("stopwords")
 
 
 # Load spaCy model
