@@ -28,7 +28,22 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 import streamlit as st
+import os
+import subprocesses
 
+def install_spacy_model():
+    subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
+
+def load_spacy_model():
+    import spacy
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        install_spacy_model()
+        nlp = spacy.load("en_core_web_sm")
+    return nlp
+
+nlp = load_spacy_model()
 
 def clean_text(text):
     # Remove punctuation
