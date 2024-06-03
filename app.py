@@ -14,7 +14,7 @@ from my_functions import (load_results, QuoteFinder,aggregate_statistics,
     correlation_analysis)
 from chatbot import ChatBot
 import spacy
-from spacy.cli
+import spacy.cli
 
 # Download the model using spacy.cli.download
 spacy.cli.download("en_core_web_sm")
