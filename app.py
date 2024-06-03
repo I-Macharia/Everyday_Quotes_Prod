@@ -1,18 +1,28 @@
 import os
 import subprocess
-import spacy
-
-def install_spacy_model():
-    subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
+def install_spacy_and_model():
+    try:
+        import spacy
+    except ImportError:
+        st.write("Installing spaCy...")
+        subprocess.run(['pip', 'install', 'spacy'], check=True)
+    
+    import spacy
+    try:
+        spacy.load("en_core_web_sm")
+    except OSError:
+        st.write("Downloading spaCy model...")
+        subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
 
 def load_spacy_model():
-    try:
-        nlp = spacy.load("en_core_web_sm")
-    except OSError:
-        install_spacy_model()
-        nlp = spacy.load("en_core_web_sm")
+    import spacy
+    nlp = spacy.load("en_core_web_sm")
     return nlp
 
+# Ensure spaCy and the model are installed
+install_spacy_and_model()
+
+# Load the spaCy model
 nlp = load_spacy_model()
 
 import pandas as pd
