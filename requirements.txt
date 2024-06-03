@@ -6,3 +6,5 @@ matplotlib
 wordcloud
 plotly
 spacy
+numpy
+pandas
