@@ -81,7 +81,7 @@ In a world filled with daily challenges and responsibilities, staying motivated 
 • Analyze the structure of the collected data, including metadata such as author names, publication dates, and associated tags.
 """)
     
-    with open('data\quotes_2.pkl', 'rb') as qt:
+    with open('data/quotes_2.pkl', 'rb') as qt:
         df = pickle.load(qt)
     
     def generate_word_cloud(data, column, title):
