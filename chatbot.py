@@ -8,7 +8,7 @@ from sklearn.utils import resample
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
 from my_functions import load_results, QuoteFinder
-from spacy.cli 
+import spacy.cli 
 
 # Download the model using spacy.cli.download
 spacy.cli.download("en_core_web_sm")
