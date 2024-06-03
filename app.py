@@ -2,15 +2,18 @@ import os
 import subprocess
 
 def install_spacy_model():
-    subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'])
+    subprocess.run(['python', '-m', 'spacy', 'download', 'en_core_web_sm'], check=True)
 
-# Install spaCy model if not already installed
-try:
+def load_spacy_model():
     import spacy
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    install_spacy_model()
-    nlp = spacy.load("en_core_web_sm")
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        install_spacy_model()
+        nlp = spacy.load("en_core_web_sm")
+    return nlp
+
+nlp = load_spacy_model()
 
 import pandas as pd
 import numpy as np
