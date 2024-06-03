@@ -10,8 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from my_functions import load_results, QuoteFinder
 import spacy.cli 
 
-# Download the model using spacy.cli.download
-python -m spacy download en_core_web_sm
+
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
