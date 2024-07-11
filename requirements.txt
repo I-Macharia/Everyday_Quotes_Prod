@@ -8,4 +8,4 @@ wordcloud
 nltk
 spacy==3.5.2
 thinc==8.1.10
-
+tensorflow
