@@ -31,11 +31,6 @@ from nltk.tokenize import word_tokenize
 
 import streamlit as st
 
-# Download the model using spacy.cli.download
-spacy.cli.download("en_core_web_sm")
-
-nltk.download("punkt")
-nltk.download("stopwords")
 
 
 def translate_to_english(text):
