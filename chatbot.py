@@ -12,10 +12,12 @@ from my_functions import load_results, QuoteFinder
 import spacy.cli 
 import nltk
 
-# nltk.download("punkt")
-# nltk.download("stopwords")
-# # Download the model using spacy.cli.download
-# spacy.cli.download("en_core_web_sm")
+# Download the model using spacy.cli.download
+spacy.cli.download("en_core_web_sm")
+
+nltk.download("punkt")
+nltk.download("stopwords")
+
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
