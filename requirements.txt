@@ -6,3 +6,5 @@ plotly
 tensorflow
 scikit-learn
 wordcloud
+nltk
+spacy
