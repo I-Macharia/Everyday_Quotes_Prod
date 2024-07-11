@@ -6,6 +6,6 @@ plotly
 scikit-learn
 wordcloud
 nltk
-spacy
+spacy[en_core_web_sm]
 thinc
 tensorflow==2.12.0
