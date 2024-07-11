@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import datetime
 import pickle
-import spacy
+
 import gzip
 import joblib
 from sklearn.utils import resample
@@ -12,15 +12,7 @@ from my_functions import load_results, QuoteFinder
 import spacy.cli 
 import nltk
 
-# Download the model using spacy.cli.download
-spacy.cli.download("en_core_web_sm")
 
-nltk.download("punkt")
-nltk.download("stopwords")
-
-
-# Load spaCy model
-nlp = spacy.load("en_core_web_sm")
 
 # Function to load data
 def load_data():
