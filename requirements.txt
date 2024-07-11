@@ -14,7 +14,6 @@ confection==0.1.5
 contourpy==1.2.1
 cycler==0.12.1
 cymem==2.0.8
-c9a31b4157bebbb73133d4110d2945476eaa4
 fonttools==4.53.0
 git-filter-repo==2.38.0
 gitdb==4.0.11
