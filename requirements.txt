@@ -6,6 +6,6 @@ plotly
 scikit-learn
 wordcloud
 nltk
-spacy==3.2.1
-thinc==8.1.10
-tensorflow==2.7.0
+spacy
+thinc
+tensorflow
