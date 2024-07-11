@@ -11,7 +11,7 @@ import zipfile
 import pickle
 import string
 import gzip
-
+import spacy
 
 from sklearn.metrics.pairwise import cosine_similarity, linear_kernel
 from sklearn.cluster import KMeans
