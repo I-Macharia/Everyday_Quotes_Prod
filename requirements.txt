@@ -14,8 +14,7 @@ confection==0.1.5
 contourpy==1.2.1
 cycler==0.12.1
 cymem==2.0.8
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_
-core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#sha256=65cea113d7509d5ab515583bbcb
+en-core-web-sm 
 c9a31b4157bebbb73133d4110d2945476eaa4
 fonttools==4.53.0
 git-filter-repo==2.38.0
