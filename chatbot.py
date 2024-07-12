@@ -9,12 +9,15 @@ from sklearn.utils import resample
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
 from my_functions import load_results, QuoteFinder
-#import spacy
-#import spacy.cli 
+import spacy
+import spacy.cli 
 import nltk
 
 # Download the model using spacy.cli.download
 # spacy.cli.download("en_core_web_sm")
+
+# Load spaCy model
+nlp = spacy.load("en_core_web_sm")
 
 nltk.download("punkt")
 nltk.download("stopwords")
