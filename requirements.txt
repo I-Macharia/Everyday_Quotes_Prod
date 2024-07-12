@@ -12,7 +12,7 @@ confection==0.1.5
 contourpy==1.2.1
 cycler==0.12.1
 cymem==2.0.8
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
+
 flatbuffers==24.3.25
 fonttools==4.53.1
 gast==0.4.0
@@ -78,9 +78,9 @@ setuptools==70.3.0
 six==1.16.0
 smart-open==6.4.0
 smmap==5.0.1
-spacy==3.5.0
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
+spacy
+spacy-legacy
+spacy-loggers
 srsly==2.4.8
 streamlit==1.36.0
 tenacity==8.5.0
