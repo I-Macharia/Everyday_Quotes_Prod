@@ -14,7 +14,7 @@ import spacy.cli
 import nltk
 
 # Download the model using spacy.cli.download
-# spacy.cli.download("en_core_web_sm")
+spacy.cli.download("en_core_web_sm")
 
 nltk.download("punkt")
 nltk.download("stopwords")
